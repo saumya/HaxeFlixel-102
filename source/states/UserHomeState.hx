@@ -6,6 +6,7 @@ class UserHomeState extends FlxState
 {
 	override public function create():Void
 	{
+		trace('UserHomeState:create');
 		super.create();
 	}
 
