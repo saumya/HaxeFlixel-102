@@ -11,7 +11,7 @@ Game of Turns
 #### Graphics
 
  - [opengameart][g1]
- - [Used Asset 1][u1]
+ - [Graphics Pack 1][u1]
  - [Graphics Pack 2][g2]
 
 #### Game services
