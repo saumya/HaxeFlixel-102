@@ -8,7 +8,11 @@ import flixel.util.FlxColor;
 
 import flixel.ui.FlxButton;
 
+import flixel.FlxG;
+
 import com.saumya.abda.comps.Player_1;
+
+import states.UserActionState;
 
 class UserHomeState extends FlxState 
 {
@@ -41,7 +45,7 @@ class UserHomeState extends FlxState
 		myText.y = myText.y - 100;
 		this.add(myText);
 		//
-		var myButton = new FlxButton(0, 0, "Get Food", myCallback);
+		var myButton = new FlxButton(0, 0, "Get Food", onGetFood);
 		// Custom graphics
 		//myButton.loadGraphic("assets/custom.png");
 		this.add(myButton);
@@ -56,8 +60,9 @@ class UserHomeState extends FlxState
 	{
 		super.update(elapsed);
 	}
-	public function myCallback():Void
+	public function onGetFood():Void
 	{
-		trace('onClick');
+		trace('onGetFood');
+		FlxG.switchState(new UserActionState());
 	}
 }
